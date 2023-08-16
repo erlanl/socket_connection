@@ -18,7 +18,7 @@ def main():
             response = client.recv(1024)
             print(response.decode())
         elif choice == "2":
-            room_name = input("Digite o nome da sala: ")
+            room_name = input("Digite o nome da sala: ")                
             client.send("JOIN {}\n".format(room_name).encode())
             response = client.recv(1024)
             print(response.decode())
